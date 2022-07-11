@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $colour-background;
+}
+
+header{
+    margin: 1rem;
+    text-align: center;
+}

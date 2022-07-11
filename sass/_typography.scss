@@ -1,12 +1,26 @@
-main{
 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+header{
+    font-family: $font-title;
+    color: $colour-text;
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 1.75rem;
+    }
+}
+
+main{
+    font-family: $font-body;
+    color: $colour-text;
 
     *{
         margin: 1rem;
     }
 
     .page-words{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
