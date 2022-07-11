@@ -1,0 +1,11 @@
+.button{
+    width: 12.5rem;
+    height: 2rem;
+
+    background-color: $colour-button-background;
+    color: $colour-button-text;
+
+    &:active{
+        background-color: $colour-button-pressed;
+    }
+}

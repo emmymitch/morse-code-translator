@@ -16,11 +16,11 @@ main{
     font-family: $font-body;
     color: $colour-text;
 
-    *{
-        margin: 1rem;
-    }
-
     .page-words{
         font-size: 1.5rem;
+    }
+
+    .button{
+        font-size: 1rem;
     }
 }

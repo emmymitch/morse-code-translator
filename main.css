@@ -14,8 +14,29 @@ body {
 }
 
 header {
-  margin: 1rem;
+  margin: 1.5rem;
   text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main * {
+  margin: 0.5rem;
+}
+
+.button {
+  width: 12.5rem;
+  height: 2rem;
+  background-color: rgb(58, 50, 113);
+  color: white;
+}
+.button:active {
+  background-color: rgb(35, 30, 68);
 }
 
 header {
@@ -33,9 +54,9 @@ main {
   font-family: "Albert Sans", Arial, Helvetica, sans-serif;
   color: rgb(19, 19, 79);
 }
-main * {
-  margin: 1rem;
-}
 main .page-words {
   font-size: 1.5rem;
+}
+main .button {
+  font-size: 1rem;
 }
