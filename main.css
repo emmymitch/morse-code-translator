@@ -5,6 +5,28 @@
   box-sizing: border-box;
 }
 
+header {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: rgb(19, 19, 79);
+}
+header h1 {
+  font-size: 2rem;
+}
+header h2 {
+  font-size: 1.5rem;
+}
+
+.main * {
+  font-family: "Albert Sans", Arial, Helvetica, sans-serif;
+  color: rgb(19, 19, 79);
+}
+.main__page-words {
+  font-size: 1.25rem;
+}
+.main__label-subtitle {
+  font-size: 0.9rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -32,7 +54,7 @@ header * {
   margin: 0.5rem;
 }
 .main__label-subtitle {
-  margin: 0.1rem;
+  margin: 0.1rem 1rem;
 }
 .main__input-box {
   transform: scale(1.2);
@@ -43,32 +65,8 @@ header * {
   height: 2rem;
   background-color: rgb(58, 50, 113);
   color: white;
+  font-size: 1rem;
 }
 .button:active {
   background-color: rgb(35, 30, 68);
-}
-
-header {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: rgb(19, 19, 79);
-}
-header h1 {
-  font-size: 2rem;
-}
-header h2 {
-  font-size: 1.5rem;
-}
-
-.main {
-  font-family: "Albert Sans", Arial, Helvetica, sans-serif;
-  color: rgb(19, 19, 79);
-}
-.main__page-words {
-  font-size: 1.25rem;
-}
-.main__label-subtitle {
-  font-size: 0.9rem;
-}
-.main__button {
-  font-size: 1rem;
 }

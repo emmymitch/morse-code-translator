@@ -13,8 +13,11 @@ header{
 }
 
 .main{
-    font-family: $font-body;
-    color: $colour-text;
+    
+    *{
+        font-family: $font-body;
+        color: $colour-text;
+    }
 
     &__page-words{
         font-size: 1.25rem;
@@ -22,9 +25,5 @@ header{
 
     &__label-subtitle{
         font-size: 0.9rem;
-    }
-
-    &__button{
-        font-size: 1rem;
     }
 }
