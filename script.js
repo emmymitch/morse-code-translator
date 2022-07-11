@@ -1,12 +1,11 @@
-const morseDictionary = {
-    a: ".-", b: "-...", c: "-.-.", d: "-..", e: ".", f: "..-.", g: "--.", h: "....", i: "..",
-    j: ".---", k: "-.-", l: ".-..", m: "--", n: "-.", o: "---", p: ".--.", q: "--.-", r: ".-.",
-    s: "...", t: "-", u: "..-", v: "...-", w: ".--", x: "-..-", y: "-.--", z: "--..",
-    "0": "-----", "1": ".----", "2": "..---", "3": "...--", "4": "....-",
-    "5": ".....", "6": "-....", "7": "--...", "8": "---..", "9": "----.",
-    "+": ".-.-.", "-": "-....-", "/": "-..-.", "=": "-...-", ":": "---...", ".": ".-.-.-",
-    "$": "...-..-", "?": "..--..", "@": ".--.-.", "&": ".-...", '"': ".-..-.", "_": "..--.-",
-    "!": "-.-.--", "(": "-.--.-", ")": "-.--.-"
+import {translateEnglishToMorse} from "./javascript/english-morse";
+
+const translatorInput = document.querySelector(".input-box");
+const translatorOutput = document.querySelector(".translator-output");
+
+const displayEnglishToMorseTranslation = () => {
+    const input = event.target.value;
+    translatorOutput.innerText = translateEnglishToMorse(input);
 }
 
-console.log(morseDictionary);
+translatorInput.addEventListener("change", displayEnglishToMorseTranslation);
