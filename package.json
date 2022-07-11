@@ -1,0 +1,25 @@
+{
+  "name": "morse-code-translator",
+  "version": "1.0.0",
+  "description": "A simple site to translate English words and phrases into morse code.",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emmymitch/morse-code-translator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emmymitch/morse-code-translator/issues"
+  },
+  "homepage": "https://github.com/emmymitch/morse-code-translator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-jest": "^28.1.2",
+    "jest": "^28.1.2"
+  }
+}
