@@ -16,15 +16,15 @@ main{
     font-family: $font-body;
     color: $colour-text;
 
-    .page-words{
+    &__page-words{
         font-size: 1.25rem;
     }
 
-    .label-subtitle{
+    &__label-subtitle{
         font-size: 0.9rem;
     }
 
-    .button{
+    &__button{
         font-size: 1rem;
     }
 }

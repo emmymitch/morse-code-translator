@@ -31,10 +31,10 @@ main {
 main * {
   margin: 0.5rem;
 }
-main .label-subtitle {
+main__label-subtitle {
   margin: 0.1rem;
 }
-main .input-box {
+main__input-box {
   transform: scale(1.2);
 }
 
@@ -63,12 +63,12 @@ main {
   font-family: "Albert Sans", Arial, Helvetica, sans-serif;
   color: rgb(19, 19, 79);
 }
-main .page-words {
+main__page-words {
   font-size: 1.25rem;
 }
-main .label-subtitle {
+main__label-subtitle {
   font-size: 0.9rem;
 }
-main .button {
+main__button {
   font-size: 1rem;
 }

@@ -13,18 +13,18 @@
         <h2>This translator will take your input and translate it. It will also do certain punctuation!</h2>
     </header>
     
-    <main>
-        <label class="page-words" for="inputBox">Enter text to translate:</label>
-        <p class="label-subtitle">If you wish to input Morse Code, please separate letters with | and words with | | .</p>
-        <input class="input-box" type="text" name="inputBox">
+    <main class="main">
+        <label class="main__page-words" for="inputBox">Enter text to translate:</label>
+        <p class="main__label-subtitle">If you wish to input Morse Code, please separate letters with | and words with | | .</p>
+        <input class="main__input-box" type="text" name="inputBox">
         
-        <div class="translate-buttons">
+        <div class="main__translate-buttons">
             <button class="button" id="buttonEngMorse">Translate to Morse Code</button>
             <button class="button" id="buttonMorseEng">Translate to English</button>
         </div>
 
-        <p class="page-words">Result:</p>
-        <p class="page-words translator-output"></p>
+        <p class="main__page-words">Result:</p>
+        <p class="main__page-words translator-output"></p>
     </main>
 
     <script src="./script.js" type="module"></script>
