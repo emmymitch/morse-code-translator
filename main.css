@@ -21,20 +21,20 @@ header * {
   margin: 0.5rem;
 }
 
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-main * {
+.main * {
   margin: 0.5rem;
 }
-main__label-subtitle {
+.main__label-subtitle {
   margin: 0.1rem;
 }
-main__input-box {
+.main__input-box {
   transform: scale(1.2);
 }
 
@@ -59,16 +59,16 @@ header h2 {
   font-size: 1.5rem;
 }
 
-main {
+.main {
   font-family: "Albert Sans", Arial, Helvetica, sans-serif;
   color: rgb(19, 19, 79);
 }
-main__page-words {
+.main__page-words {
   font-size: 1.25rem;
 }
-main__label-subtitle {
+.main__label-subtitle {
   font-size: 0.9rem;
 }
-main__button {
+.main__button {
   font-size: 1rem;
 }

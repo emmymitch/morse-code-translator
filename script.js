@@ -2,7 +2,7 @@ import {morseDictionary} from "./javascript/morse-dictionary.js";
 import {translateEnglishToMorse} from "./javascript/english-morse.js";
 import { translateMorseToEnglish } from "./javascript/morse-english.js";
 
-const translatorInput = document.querySelector(".input-box");
+const translatorInput = document.querySelector(".main__input-box");
 const translatorOutput = document.querySelector(".translator-output");
 const EngToMorseButton = document.querySelector("#buttonEngMorse");
 const MorseToEngButton = document.querySelector("#buttonMorseEng");
