@@ -1,4 +1,5 @@
-import {translateEnglishToMorse} from "./javascript/english-morse";
+import {morseDictionary} from "./javascript/morse-dictionary.js";
+import {translateEnglishToMorse} from "./javascript/english-morse.js";
 
 const translatorInput = document.querySelector(".input-box");
 const translatorOutput = document.querySelector(".translator-output");

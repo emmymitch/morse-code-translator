@@ -10,7 +10,7 @@ it("Should translate 'Hello' to ....|.|.-..|.-..|---", () => {
 
 it("Should translate 'SOS' to ...|---|...", () => {
     const result = translateEnglishToMorse("SOS");
-    expect(result).toBe("...|---|...");s
+    expect(result).toBe("...|---|...");
 })
 
 it("Should translate numbers in string form", () => {
@@ -19,13 +19,13 @@ it("Should translate numbers in string form", () => {
 })
 
 it("Should translate special characters", () => {
-    const result = translateEnglishToMorse(`+-/=:.$?@&"_!(`);
-    expect(result).toBe("  -....-|-..-.|-...-|---...|.-.-.-|..--..|.--.-.|.-...|.-..-.|..--.-|-.-.--|-.--.-");
+    const result = translateEnglishToMorse(`+-/=:.?@&"_!(`);
+    expect(result).toBe(".-.-.|-....-|-..-.|-...-|---...|.-.-.-|..--..|.--.-.|.-...|.-..-.|..--.-|-.-.--|-.--.-");
 })
 
 it("Should translate sentences", () => {
     const result = translateEnglishToMorse("This is a sentence.");
-    expect(result).toBe("-|....|..|...||..|...||.-||...|.|-.|-|.|-.|-.-.|.||.-.-.-");
+    expect(result).toBe("-|....|..|...||..|...||.-||...|.|-.|-|.|-.|-.-.|.|.-.-.-");
 })
 
 it("Should return a string", () => {
