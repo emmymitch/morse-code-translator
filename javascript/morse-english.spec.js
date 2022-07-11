@@ -3,14 +3,14 @@ import {morseDictionary} from "./morse-dictionary";
 import {translateMorseToEnglish} from "./morse-english";
 
 //Positive tests
-it("Should translate .... | . | .-.. | .-.. | --- to 'Hello'", () => {
+it("Should translate .... | . | .-.. | .-.. | --- to 'hello'", () => {
     const result = translateMorseToEnglish(".... | . | .-.. | .-.. | ---");
-    expect(result).toBe("Hello");
+    expect(result).toBe("hello");
 })
 
-it("Should translate ... | --- | ... to 'SOS'", () => {
+it("Should translate ... | --- | ... to 'sos'", () => {
     const result = translateMorseToEnglish("... | --- | ...");
-    expect(result).toBe("SOS");
+    expect(result).toBe("sos");
 })
 
 it("Should translate numbers", () => {
@@ -24,8 +24,8 @@ it("Should translate special characters", () => {
 })
 
 it("Should translate sentences", () => {
-    const result = translateMorseToEnglish("- | .... | .. | ... |  | .. | ... |  | .- |  | ... | . | -. | - | . | -. | -.-. | . | .-.-.-");
-    expect(result).toBe("This is a sentence.");
+    const result = translateMorseToEnglish("- | .... | .. | ... | | .. | ... | | .- | | ... | . | -. | - | . | -. | -.-. | . | .-.-.-");
+    expect(result).toBe("this is a sentence.");
 })
 
 it("Should return a string", () => {
