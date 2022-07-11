@@ -1,31 +1,31 @@
 import morseDictionary from "./morse-dictionary.js";
 
 export const translateMorseToEnglish = (morse) => {
-    let englishTranslation = "";
+    const miniDic = Object.entries(morseDictionary);
 
     if (morse == undefined){
         return "Please input text";
     }
 
-    const morseArr = morse.split(" | ");
+    //Split into morse words
+    const morseWordsArr = morse.split(" | | ");
+    //Split words into letters in a 2D array
+    const splitWordsArr = morseWordsArr.map(word => {
+        return word.split(" | ");
+    });
 
-    const miniDic = Object.entries(morseDictionary);
-    console.log(miniDic);
-    for (let i=0; i<morseArr.length; i++){
-        for (let j=0; j<miniDic.length; j++){
-            
-            if (morseArr[i] == miniDic[j][1]){
-                englishTranslation += miniDic[j][0];
+    //Iterates over both levels of splitWordsArr
+    for (let i=0; i<splitWordsArr.length; i++){
+        for (let j=0; j<splitWordsArr[i].length; j++){
 
-            } else if (morseArr[i] == " "){
-                englishTranslation += " ";
-
-            } else {
-                continue;
+            //Iterate over entries array
+            for (let k=0; k<miniDic.length; k++){
+                if (splitWordsArr[i][j] == miniDic[k][1]){
+                    splitWordsArr[i][j] = miniDic[k][0];
+                }
             }
         }
-
+        splitWordsArr[i] = splitWordsArr[i].join("");
     }
-
-    return englishTranslation;
+    return splitWordsArr.join(" ");
 }
