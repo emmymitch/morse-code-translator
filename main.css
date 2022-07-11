@@ -44,10 +44,10 @@ header {
   color: rgb(19, 19, 79);
 }
 header h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 header h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 main {
@@ -55,7 +55,7 @@ main {
   color: rgb(19, 19, 79);
 }
 main .page-words {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 main .button {
   font-size: 1rem;
