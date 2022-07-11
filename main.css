@@ -17,6 +17,9 @@ header {
   margin: 1.5rem;
   text-align: center;
 }
+header * {
+  margin: 0.5rem;
+}
 
 main {
   display: flex;
@@ -27,6 +30,12 @@ main {
 }
 main * {
   margin: 0.5rem;
+}
+main .label-subtitle {
+  margin: 0.1rem;
+}
+main .input-box {
+  transform: scale(1.2);
 }
 
 .button {
@@ -56,6 +65,9 @@ main {
 }
 main .page-words {
   font-size: 1.25rem;
+}
+main .label-subtitle {
+  font-size: 0.9rem;
 }
 main .button {
   font-size: 1rem;

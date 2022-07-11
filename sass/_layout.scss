@@ -10,6 +10,10 @@ body{
 header{
     margin: 1.5rem;
     text-align: center;
+
+    *{
+        margin: 0.5rem;
+    }
 }
 
 main{
@@ -21,5 +25,13 @@ main{
 
     *{
         margin: 0.5rem;
+    }
+
+    .label-subtitle{
+        margin: 0.1rem;
+    }
+
+    .input-box{
+        transform: scale(1.2);
     }
 }
