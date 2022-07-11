@@ -22,5 +22,5 @@ export const translateEnglishToMorse = (english) => {
             morseTranslation.push(morseDictionary[charArr[i].toLowerCase()]);
         }
     }
-    return morseTranslation.join("|");
+    return morseTranslation.join(" | ");
 }
